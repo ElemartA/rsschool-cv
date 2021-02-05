@@ -29,7 +29,6 @@ body {
 	-webkit-border-image: -webkit-linear-gradient(top, #72B626 0%, #f3ecec 100%);
 	border-image: linear-gradient(to bottom, #72B626 0%, #f0eaea 100%);
 	border-image-slice: 1;
-    background: url(./img/photo.jpg)
 }
 
 h1{
