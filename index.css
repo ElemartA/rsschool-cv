@@ -56,3 +56,12 @@ h2{
     font-size: 13px;
     
 }
+
+.footer__photo {
+    height: 30px;
+}
+
+footer a{
+    text-decoration: none;
+    color:#72B626;
+}
