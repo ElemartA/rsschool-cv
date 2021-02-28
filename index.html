@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+
+<body class="page">
+  <div class="wrapper">
+    <header class="header">
+
+      <div class="header__information">
+        <h1 class="header__name">Alena Martynova</h1>
+        <div class="header__contacts">
+          <ul class="contacts">
+            <li>phone: +375(44) 761-72-38</li>
+            <li>email: info88881@gmai.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__photo">
+        <img src="img/photo.jpg" alt="Photo" height = "300">
+      </div>
+    </header>
+    <div class="wrapper">
+
+      <main class="main">
+        <div class="container">
+          <div class="main__summary">
+            <h2>Summary</h2>
+            <p>Hi there! I am considering a job change and my goal is to improve knowledge in web development. I'm
+              interested in
+              everything that surround me. Half a year ago, I started learning programming on my own. I liked it and I
+              would like to continue doing this.</p>
+          </div>
+          <div class="main__skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML5, CSS3, JavaScript</li>
+              <li> Little React, redux</li>
+              <li>Git</li>
+              <li>Photoshop, Figma</li>
+              <li>Selenium, cheerio, and little node.js</li>
+              <li>Code Editor (Visual Studio Code)</li>
+            </ul>
+          </div>
+          <div class="main__education">
+            <h2>Education</h2>
+            <h4>BSEU, Faculty of Finance and Banking, Department of Banking</h4>
+            <h3>Self-study:</h3>
+            <ul>
+              <li>HTMLAcademy: HTML & CSS basics</li>
+              <li>JavaScript for kids. A tutorial on programming. Nick Morgan</li>
+              <li>youtube</li>
+              <li>learn.javascript.ru</li>
+              <li>Online-course React JS - путь самурая 1.0</li>
+            </ul>
+            <br>
+            </div>
+          <div class="main__experience">
+            <div class="main__code">
+              <h2>Code examples</h2>
+              <h4>
+                This is a function that will receive the page code and return a cheerio object, with which you can work
+                with DOM elements.
+              </h4>
+              <pre class="code">
+                async function getPage(url) {
+                  return new Promise((resolve, reject) => {
+                      request({
+                          url: url,
+                          headers: {
+                              'User-Agent': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.13 (KHTML,
+                               like Gecko) Chrome/24.0.1290.1 Safari/537.13'
+                          }
+                      }, (error, response, body) => {
+                          if (error) {
+                              return reject(error);
+                          }
+                          return resolve(cheerio.load(body, { decodeEntities: false }));
+                      })
+                  });
+              }
+            </pre>
+            </div>
+            <h2>Experience</h2>
+            <p>Have an experience in building react app.
+              You can see it here:</p>
+            
+            <ul>
+              <li><a href="https://elemarta.github.io/SocialNetwork/" target="_blank">SocialNetwork</a></li>
+
+            </ul>
+          </div>
+          <div class="main__languages">
+            <h2>English Level</h2>
+            <p>Pre Intermediate<br><br>There was no practice of using. I'm read books and articles, watching training
+              videos, trying to improve my language skills.</p>
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+    <footer>
+      <article>
+        <h5>Year of creation application: <time>2021</time></h5>
+       </article>
+       <ul>
+        <li><a href = "https://github.com/ElemartA" target="_blank" class="">Link to my github</a></li>
+        <li><a href="https://rs.school/js/" target="_blank"><img alt ="logo-rs-school" src="./img/rs_school_js.svg" class="footer__photo" /></a></li>
+      </ul> 
+    </footer>
+  </div>
+</body>
+
+</html>
